@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bgBox" v-motion :initial="{ opacity: 0, y: 25 }" :enter="{ opacity: 1, y: 0 }" :duration="1000">
-      <img src="https://i.p-i.vip/43/20240915-66e6e5abe3e97.webp" alt="">
+      <img src="https://s2.loli.net/2025/04/21/l1m2jZdroYbIagV.png" alt="">
     </div>
 
     <div class="bgGrid">
@@ -16,17 +16,17 @@
     <div class="main" v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1 }" :duration="1000">
       <div class="info">
         <div class="header">
-          <img src="https://i.p-i.vip/43/20240913-66e403f2331ec.webp" alt="">
+          <img src="https://s2.loli.net/2025/04/20/V8zWaEoxP5msqNQ.jpg" alt="">
         </div>
 
         <div class="infoText">
           <h1>Hi,</h1>
-          <h1>I'm <span class="qn">鹊楠</span></h1>
+          <h1>I'm <span class="qn">克喵爱吃卤面</span></h1>
         </div>
       </div>
 
       <div class="typewriter">
-        <i class="iconfont icon-baojiaquotation2"></i>
+        <i class="iconfont icon-baojiaquotation1"></i>
         <VueTyped :strings="typingTexts" :startDelay="300" :typeSpeed="100" :backSpeed="30" :loop="true"
           :showCursor="true">
         </VueTyped>
@@ -45,7 +45,7 @@
         </a>
 
         <vs-button class="lastBtn" color="#457B9D" animation-type="scale" @click="active = true">
-          <i class="iconfont icon-guanyu"></i>
+          <i class="iconfont icon-guanyu1"></i>
 
           <template #animate>
             关于
@@ -55,7 +55,7 @@
     </div>
 
     <div class="footer">
-      By Quenan | ©2024
+      By 克喵爱吃卤面 | ©2025
     </div>
 
     <vs-dialog overlay-blur width="550px" not-center v-model="active">
@@ -81,13 +81,13 @@
               <template #content>{{ i.content }}</template>
             </vs-tooltip>
 
-            <vs-tooltip placement="top">
+            <!-- <vs-tooltip placement="top">
               <vs-avatar color="#FF6D1A">
                 初
               </vs-avatar>
 
               <template #content>初七云cdn</template>
-            </vs-tooltip>
+            </vs-tooltip> -->
 
           </vs-avatar-group>
         </vs-alert>
@@ -95,15 +95,15 @@
         <vs-alert color="#00BCD4" type="gradient" v-model:hidden-content="aboutHidden">
           <template #title>关于项目</template>
 
-          <p>你可以从这里访问 <b>我的博客、GitHub、哔哩哔哩、网易云歌单</b> 以及给我发 <b>邮件</b> ！</p>
+          <p>你可以从这里访问 <b>我的博客、GitHub、哔哩哔哩、网易云歌单、电报账户</b> 以及给我发 <b>邮件</b> ！</p>
           <p>本项目借鉴了
-            <b><a href="https://pzj.us.kg/" target="_blank">pzjawa</a></b> 、
-            <b><a href="https://www.liushen.fun/" target="_blank">清羽飞扬</a></b>
-            等主页，感谢他们awa
+            <b><a href="https://quenan.cn/" target="_blank">鹊楠</a></b>
+            <!-- <b><a href="https://www.liushen.fun/" target="_blank">清羽飞扬</a></b> -->
+            的主页，感谢他awa
           </p>
           <p>项目已经开源：</p>
-          <p><a href="https://github.com/QNquenan/homepage-for-vue3"
-              target="_blank">https://github.com/QNquenan/homepage-for-vue3</a>
+          <p><a href="https://github.com/Kemeow815/homepage-for-vue3"
+              target="_blank">https://github.com/Kemeow815/homepage-for-vue3</a>
           </p>
         </vs-alert>
       </div>
@@ -114,7 +114,7 @@
 
             <input type="radio" id="light" name="theme" :checked="theme == 'light'">
             <label @click="setTheme('light')" for="light">
-              <i class="iconfont icon-baitian"></i>
+              <i class="iconfont icon-qingbaitian"></i>
             </label>
 
             <input type="radio" id="system" name="theme" :checked="theme == 'system'">
@@ -124,7 +124,7 @@
 
             <input type="radio" id="dark" name="theme" :checked="theme == 'dark'">
             <label @click="setTheme('dark')" for="dark">
-              <i class="iconfont icon-yewan"></i>
+              <i class="iconfont icon-yewan2"></i>
             </label>
 
             <div class="checkedBg"></div>
@@ -154,46 +154,46 @@ export default {
       aboutHidden: true,
       typingTexts: [
         "你好鸭，欢迎来到我的主页！",
-        "彼方尚有荣光在，世界不止眼前的苟且，还有诗和远方",
-        "累了可以在我这里歇歇脚嗷",
-        "May you happy every day",
+        "愿你看清一切真相后，依旧热爱你的家人和朋友。",
+        "总有些事情高于其他！",
+        "每一段旅行都有终点~",
       ],
       btnList: [
         {
-          icon: 'icon-wodeboke',
+          icon: 'icon-boke-cur',
           animate: '博客',
           color: '#fe8599',
-          href: 'https://blog.quenan.cn'
+          href: 'https://blog-v3.kemeow.top'
         },
         {
-          icon: 'icon-github',
+          icon: 'icon-github1',
           animate: 'Github',
           color: '#3d3d3d',
-          href: 'https://github.com/QNquenan'
+          href: 'https://github.com/Kemeow815'
         },
         {
           icon: 'icon-bilibili',
           animate: 'BiliBili',
           color: '#0BA6D8',
-          href: 'https://space.bilibili.com/495882959'
+          href: 'https://space.bilibili.com/3546643173477234'
         },
         {
-          icon: 'icon-youjian1',
+          icon: 'icon-youxiang1',
           animate: 'E-mail',
           color: '#FACB1E',
-          href: 'mailto:qn2987271942@outlook.com'
+          href: 'mailto:kemiaofx@163.com'
         },
         {
-          icon: 'icon-wangyiyunyinle1',
+          icon: 'icon-wangyiyun1',
           animate: '网易云',
           color: '#D81E06',
-          href: 'https://music.163.com/#/playlist?id=2696501847&creatorId=1785635020'
+          href: 'https://music.163.com/#/playlist?id=2607560262&creatorId=1725716511'
         },
       ],
       avaters: [
         {
           color: '#43B884',
-          icon: 'icon-vue',
+          icon: 'icon-vue3',
           content: 'Vue3'
         },
         {
@@ -218,11 +218,11 @@ export default {
         },
         {
           color: '#000',
-          icon: 'icon-github',
+          icon: 'icon-github1',
           content: 'Github'
         }
       ],
-      upTime: '2025-03-17',
+      upTime: '2025-04-21',
       version: 'v3',
       gridRows: 9,
       gridCols: 5,
@@ -267,6 +267,6 @@ export default {
 </script>
 
 <style lang="less">
-@import url(//at.alicdn.com/t/c/font_4685493_lrpbngzgvbk.css);
+@import url(//at.alicdn.com/t/c/font_4899897_559v27idirq.css);
 /* 阿里巴巴图标库 */
 </style>
